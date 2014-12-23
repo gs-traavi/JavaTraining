@@ -28,12 +28,6 @@ public class assignmentproblem2 {
 	        System.out.println();
 	        System.out.println("Scored Marks are:-");
 	        System.out.println(marks);
-	
-	
 	scan.close();
 	}
-	
-	
-	
-
 }

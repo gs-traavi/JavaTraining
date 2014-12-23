@@ -1,7 +1,6 @@
 package basics;
 import java.util.Scanner;
 public class assignmentproblem1 {
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
          int count = 0;
@@ -21,5 +20,4 @@ public class assignmentproblem1 {
 		System.out.println("if a = "+a+" and  b = "+b+" The answer is "+count);
 		scan.close();
 	}
-
 }
