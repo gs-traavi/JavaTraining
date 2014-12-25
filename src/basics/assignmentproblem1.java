@@ -8,7 +8,7 @@ public class assignmentproblem1 {
 		 System.out.println("Enter  two Strings");
 	     String a = scan.nextLine();
          String b = scan.nextLine();		
-		for(int i=0;(i<=a.length()-2&&i<=b.length()-2);i++)
+		for(int i=0,j=0;(i<=a.length()-2&&j<=b.length()-2);i++,j++)
 		{
 			String str1 = a.substring(i,i+2);
 			String str2 = b.substring(i,i+2);

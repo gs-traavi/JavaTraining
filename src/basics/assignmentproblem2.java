@@ -22,6 +22,8 @@ public class assignmentproblem2 {
 	        {
 	        	if(examkey[i]==answers[i])
 	        	marks+=4;
+	        		else if(answers[i]=='?')
+	        		marks+=0;
 	        		else
 	        	  marks+=-1;
 	        }
