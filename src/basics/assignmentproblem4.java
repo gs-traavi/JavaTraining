@@ -9,8 +9,8 @@ public class assignmentproblem4 {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter any number");
 		int num = scan.nextInt();
-		int[] prime = new int[100];
-		int[] countprime = new int[100];
+		int[] prime = new int[1000];
+		int[] countprime = new int[1000];
 		int l, king = 1;
 		for (int p = 0; p < 100; p++) {
 			prime[p] = 0;
@@ -21,15 +21,12 @@ public class assignmentproblem4 {
 			int flag = 0;
 			if (num % j == 0)// is j a factor
 			{
-
 				for (int k = 2; k <= j/2; k++) {// is j a prime factor
-
 					if (j % k == 0) {
 						flag = 1;
 						break;
 					}
 				}
-
 				if (flag != 1 || j == 2) {
 					prime[j] = j;
 					l = num;
@@ -37,13 +34,12 @@ public class assignmentproblem4 {
 						countprime[j] = countprime[j] + 1;
 						l = l / j;
 					}
-
 				}
 			}
 		}
 		//Output Format
 		System.out.print(num + "  ->  ");
-		for (int p = 0; p < 100; p++) {
+		for (int p = 0; p < 1000; p++) {
 			if (countprime[p] != 0) {
 				if (king != 1) {
 					System.out.print("*");
