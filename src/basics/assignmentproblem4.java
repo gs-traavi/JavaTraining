@@ -16,13 +16,13 @@ public class assignmentproblem4 {
 			prime[p] = 0;
 			countprime[p] = 0;
 		}
-		for (int j = 2; j <= num / 2; j++)// factors
+		for (int j = 2; j <= num; j++)// factors
 		{
 			int flag = 0;
 			if (num % j == 0)// is j a factor
 			{
 
-				for (int k = 2; k <= j / 2; k++) {// is j a prime factor
+				for (int k = 2; k <= j/2; k++) {// is j a prime factor
 
 					if (j % k == 0) {
 						flag = 1;
